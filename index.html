@@ -4,21 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bennie Blog Cards</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>hello world</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, non!</p>
-    <h2>hello world</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, non!</p>
-    <h3>hello world</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, non!</p>
-    <div class="main">
-      <p class="main-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quidem
-        tenetur suscipit corrupti iure iusto.
-      </p>
-    </div>
+    <!-- blog section -->
+    <section class="blogs">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>bennie's blog page</h2>
+      </div>
+      <!-- end of section title -->
+      <!-- blogs center -->
+      <div class="blogs-center">
+        <!-- first blog -->
+        <article class="blog">
+          <img
+            src="./images/BennieCozy.jpg"
+            alt="Cozy Bennie Pit pull"
+            class="blog-img img"
+          />
+          <!-- blog content -->
+          <div class="blog-content">
+            <span>THUNDER <i class="fa-solid fa-cloud-bolt"></i></span>
+            <h3>the sound of thunder scares me</h3>
+            <p>
+              We've had a lot of strong rain lately and even thunder! Thanks to
+              my cozy blanket, I feel more safe.
+            </p>
+            <a href="#">read more</a>
+          </div>
+        </article>
+        <!-- end of first blog -->
+        <!-- second blog -->
+        <article class="blog">
+          <img
+            src="./images/BennieGang2021.jpg"
+            alt="Bennie and his friends"
+            class="blog-img img"
+          />
+          <!-- blog content -->
+          <div class="blog-content">
+            <span>MY POSSE <i class="fa-solid fa-face-laugh-beam"></i></span>
+            <h3>i love hanging with my friends</h3>
+            <p>
+              Meet my posse! Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Sequi, omnis!
+            </p>
+            <a href="#">read more</a>
+          </div>
+        </article>
+        <!-- end of second blog -->
+        <!-- third blog -->
+        <article class="blog">
+          <img
+            src="./images/BenniePose.jpeg"
+            alt="Bennie Strong pose"
+            class="blog-img img"
+          />
+          <!-- blog content -->
+          <div class="blog-content">
+            <span>Bennie!<i class="fa-solid fa-face-laugh-beam"></i></span>
+            <h3>hello, my name is Bennie!</h3>
+            <p>
+              Some people think i'm scary. They are wrong! In fact, i'm the
+              sweetest pitbull! Thanks to my family for giving me the best life!
+            </p>
+            <a href="#">read more</a>
+          </div>
+        </article>
+        <!-- end of third blog -->
+      </div>
+      <!-- end of blogs center -->
+    </section>
   </body>
 </html>

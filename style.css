@@ -1,40 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* CSS Variables */
+
 :root {
-  --primaryColor: #f15025;
-  --secondarycolor: blue;
-  --mainTransition: all 2s linear;
-  --mainSpacing: 5px;
+  --primary: #645cff;
+  --primary-dark: #3c3799;
+  --grey-light: #f1f5f9;
+  --grey: #64748b;
+  --grey-dark: #0f172a;
+  --fluid-width: 90vw;
+  --max-width: 1170px;
+  --black: #222;
+  --white: #fff;
+  --letter-spacing: 2px;
+  --border-radius: 0.15rem;
+  --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --shadow-red: 0 5px 15px rgba(233, 22, 22, 0.4);
+  --transition: 0.3s ease-in-out all;
 }
 
-h1 {
-  color: var(--primaryColor);
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background: var(--grey-light);
+  color: var(--grey-dark);
 }
-h2 {
-  color: var(--primaryColor);
-}
+
 h3 {
-  color: var(--primaryColor);
-  transition: var(--mainTransition);
+  text-transform: capitalize;
 }
 
-p {
-  letter-spacing: var(--mainSpacing);
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
-h3:hover {
-  color: var(--secondarycolor);
-  cursor: pointer;
+.blogs {
+  padding: 5rem 0;
 }
 
-p:hover {
-  color: var(--secondarycolor);
-  cursor: pointer;
+.section-title {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+  margin-bottom: 2rem;
 }
 
-div {
-  --primaryRed: red;
+.blogs-center {
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  max-width: 500px;
 }
 
-.main-text {
-  color: var(--primaryRed);
+.blog {
+  background: white;
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+  margin-bottom: 2rem;
+}
+
+.blog:hover {
+  box-shadow: var(--shadow-red);
+}
+
+.blog-img {
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
 }
